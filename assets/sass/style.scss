@@ -1,9 +1,6 @@
 @import 'default/reset';
+@import 'default/extends';
+@import 'default/variable';
+@import 'default/mixins';
 @import 'default/header';
-
-/*for wrapper*/
-.wrapper {
-  max-width: 1360px;
-  width: 57%; 
-  margin: 0 auto;
-}
+@import 'default/banner';

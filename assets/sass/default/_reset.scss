@@ -83,7 +83,8 @@ sub { bottom: -.25em; }
 /*for all*/
 body {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Gill Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 a { 
@@ -94,4 +95,11 @@ a {
 li {
   display: inline-block;
   list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 57%; 
+  margin: 0 auto;
 }
