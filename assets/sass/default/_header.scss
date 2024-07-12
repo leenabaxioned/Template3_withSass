@@ -26,21 +26,22 @@
 
 .head-nav {
     flex-basis: 46%;
-}
 
-.nav-menu{
-    @extend %flex-styling;
-    li a {
-        color: #000;
-        font-size: 10px;
-        text-transform: uppercase;
-        transition: all 0.3s;
-
-        &:hover {
-            text-shadow: 1px 3px 3px #424040;
+    .nav-menu{
+        @extend %flex-styling;
+        li a {
+            color: #000;
+            font-size: 10px;
+            text-transform: uppercase;
+            transition: all 0.3s;
+    
+            &:hover {
+                text-shadow: 1px 3px 3px #424040;
+            }
         }
     }
 }
+
 /*=================================
   Header styling ends here
 =================================*/
