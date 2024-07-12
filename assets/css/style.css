@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
    1. CSS Reset Code
    ========================================================================== */
@@ -96,7 +97,7 @@ li {
   width: 57%;
   margin: 0 auto; }
 
-.main-header, .nav-menu {
+.main-header, .nav-menu, .logos {
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -180,5 +181,80 @@ li {
 
 .banner-content span:hover::before {
   background-color: #8fb837; }
+
+/*=================================
+  main styling starts here
+=================================*/
+.business {
+  background-color: #fcfcfc; }
+
+.business h2 {
+  padding: 25px;
+  font-size: 25px;
+  text-transform: uppercase; }
+  .business h2::after {
+    display: inline-block;
+    content: "";
+    border-top: 2px dashed #dddddd;
+    width: 100%;
+    transform: translateY(5px); }
+
+.logos {
+  padding: 20px 0;
+  text-align: center; }
+
+.featurelogo h3 {
+  padding: 10px 0;
+  font-size: 25px;
+  text-transform: uppercase; }
+  .featurelogo h3 span {
+    display: block;
+    font-size: 15px;
+    text-transform: none; }
+
+.support,
+.call,
+.Web,
+.mobile {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  text-indent: -9999px;
+  border: 1px solid #ccc;
+  border-radius: 50%; }
+
+.support::after,
+.call::after,
+.Web::after,
+.mobile::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "FontAwesome";
+  width: 115px;
+  height: 115px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: #8fb837;
+  color: #fff;
+  font-size: 65px;
+  text-indent: 0; }
+
+.support::after {
+  content: ""; }
+
+.call::after {
+  content: ""; }
+
+.Web::after {
+  content: ""; }
+
+.mobile::after {
+  content: ""; }
+
+/*=================================
+  main styling ends here
+=================================*/
 
 /*# sourceMappingURL=style.css.map */
