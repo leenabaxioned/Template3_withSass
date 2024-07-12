@@ -17,6 +17,7 @@
     }
 }
 
+//-----------------------logos styling starts here
 .logos {
     @extend %flex-styling; 
     padding: 20px 0;
@@ -70,7 +71,80 @@
 .call::after { content: "\f095" }
 .Web::after { content: "\f013" }
 .mobile::after { content: "\f10b" }
+//-----------------------logos styling ends here
+//-----------------------portfolio styling starts here
+.porfolio h2 {
+    padding: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
 
+    &::after {
+        display: inline-block;
+        content: "";
+        border-top: 2px dashed #dddddd;
+        width: 60%;
+        transform: translate(15px, -6px);
+    }
+
+    &::before {
+        display: inline-block;
+        content: "";
+        border-top: 2px dashed #dddddd;
+        width: 3%;
+        transform: translate(-15px, -6px);
+    }
+}
+
+.porfolio-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .cards {
+       display: flex;
+       gap: 5px;
+       flex-basis: 48%;
+       border: 1px solid #ccc;
+
+       .card-content {
+        flex-basis: 55%;
+        padding: 10px;
+
+        h3 {
+            font-size: 15px;
+            text-transform: uppercase
+        }
+
+        p {
+            font-size: 12px;
+        }
+        }
+    }
+}
+//-----------------------portfolio styling ends here
+//-----------------------advertiser styling starts here
+.advertiser h2 {
+    padding: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    &::after {
+        display: inline-block;
+        content: "";
+        border-top: 2px dashed #dddddd;
+        width: 60%;
+        transform: translate(15px, -6px);
+    }
+
+    &::before {
+        display: inline-block;
+        content: "";
+        border-top: 2px dashed #dddddd;
+        width: 3%;
+        transform: translate(-15px, -6px);
+    }
+}
+//-----------------------advertiser styling ends here
 
 /*=================================
   main styling ends here

@@ -253,6 +253,58 @@ li {
 .mobile::after {
   content: ""; }
 
+.porfolio h2 {
+  padding: 20px;
+  font-size: 20px;
+  text-transform: uppercase; }
+  .porfolio h2::after {
+    display: inline-block;
+    content: "";
+    border-top: 2px dashed #dddddd;
+    width: 60%;
+    transform: translate(15px, -6px); }
+  .porfolio h2::before {
+    display: inline-block;
+    content: "";
+    border-top: 2px dashed #dddddd;
+    width: 3%;
+    transform: translate(-15px, -6px); }
+
+.porfolio-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .porfolio-cards .cards {
+    display: flex;
+    gap: 5px;
+    flex-basis: 48%;
+    border: 1px solid #ccc; }
+    .porfolio-cards .cards .card-content {
+      flex-basis: 55%;
+      padding: 10px; }
+      .porfolio-cards .cards .card-content h3 {
+        font-size: 15px;
+        text-transform: uppercase; }
+      .porfolio-cards .cards .card-content p {
+        font-size: 12px; }
+
+.advertiser h2 {
+  padding: 20px;
+  font-size: 20px;
+  text-transform: uppercase; }
+  .advertiser h2::after {
+    display: inline-block;
+    content: "";
+    border-top: 2px dashed #dddddd;
+    width: 60%;
+    transform: translate(15px, -6px); }
+  .advertiser h2::before {
+    display: inline-block;
+    content: "";
+    border-top: 2px dashed #dddddd;
+    width: 3%;
+    transform: translate(-15px, -6px); }
+
 /*=================================
   main styling ends here
 =================================*/
